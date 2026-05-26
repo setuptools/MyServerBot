@@ -125,23 +125,3 @@ def get_disk_health():
 
     return disks
 
-
-if __name__ == "__main__":
-
-    print("\n=== CPU ===")
-    print("Name:", get_cpu_name())
-    print("Usage:", get_cpu_usage(), "%")
-    print("Temperature:", get_cpu_temp())
-
-    print("\n=== RAM ===")
-    print(get_ram_info())
-
-    print("\n=== DISKS ===")
-    for disk in get_disk_info():
-        print(disk)
-
-    print("\n=== DISK HEALTH ===")
-    print(get_disk_health())
-
-    print("\n=== FANS ===")
-    print(get_fan_speed())
